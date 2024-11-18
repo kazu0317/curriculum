@@ -1,0 +1,10 @@
+<form action="ボタン押下で実行されるURL（「http://〜〜〜」より後ろの部分）" method="リクエストの種別（GETやPOSTなど）">
+    <p>タイトル：</p>
+    <input type="text" name="title" placeholder="タイトル"/><br>
+    <p>メッセージ：</p>
+    <textarea name="message" placeholder="今日も1日お疲れさまでした。"></textarea><br>
+    <input type="submit" value="実行"/>
+</form>
+
+http://〜〜〜/xxx?title=入力されたタイトルの値&message=入力されたメッセージの値
+→サーバーアプリケーション側では「title」「message」というパラメータ名を参照することで、値を取得することができる。
